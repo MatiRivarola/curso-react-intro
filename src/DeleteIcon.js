@@ -1,9 +1,16 @@
 import React from "react";
+import { AiOutlineDelete } from "react-icons/ai";
+import { TodoIcon } from "./TodoIcon";
 
-function DeleteIcon(props){
-    const {className, onClick} = props
-    return 'X'
+
+function DeleteIcon(){
+    return (
+        <TodoIcon
+            type="delete"
+            color="red"
+        />
+    );
 }
 
 
-export {DeleteIcon}
+export { DeleteIcon };

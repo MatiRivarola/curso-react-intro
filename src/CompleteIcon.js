@@ -1,8 +1,15 @@
 import React from "react";
+import { TodoIcon } from "./TodoIcon";
 
+import { BiCheck } from "react-icons/bi";
 
 function CompleteIcon() {
-    return "V"
+    return (
+        <TodoIcon
+            type="check"
+            color="gray"
+        />
+    )
 
 }
 
