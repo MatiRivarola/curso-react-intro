@@ -164,6 +164,10 @@
   left: 12px;
 }
 
+.icon-check:hover{
+  color: green;
+}
+
 .icon-check--active{
   color: green;
 }
@@ -177,4 +181,9 @@
 
 .icon-delete:hover{
   color: red;
+}
+
+.icon-svg{
+  width: 24px;
+  height: 24px;
 }

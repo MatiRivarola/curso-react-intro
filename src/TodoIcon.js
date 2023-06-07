@@ -1,12 +1,17 @@
 import { AiOutlineDelete } from "react-icons/ai";
 import { BiCheck } from "react-icons/bi";
 
-function TodoIcon(type) {
+const iconTypes = {
+    "check": <BiCheck/>,
+    "delete":<AiOutlineDelete/>,
+};
+
+function TodoIcon( {type} ) {
     return(
         <span
         className= {`icon icon-svg icon-${type}`}
         >
-            <BiCheck/>
+            {iconTypes[type]}
         </span>
     )
 }
