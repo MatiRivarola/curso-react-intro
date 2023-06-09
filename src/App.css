@@ -49,13 +49,13 @@
   margin-inline-start: 0;
   font-weight: 700;
   text-align: start;
-  color: #057777;
+  color: #dd8d20;
 }
 .title-secondary-task{
   font-family: 'Poppins', sans-serif;
   font-size: small;
   font-weight: 400;
-  color: #057777;
+  color: #dd8d20;
   margin: 0;
   padding-bottom: 22px;
 }
@@ -83,7 +83,7 @@
   border-color: rgba(240, 248, 255, 0);
   width: 100px;
   height: 31px;
-  background-color: #057777;
+  background-color: #dd8d20;
   color:white;
   font-size: 75%;
 }

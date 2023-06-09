@@ -17,6 +17,8 @@ const defaultTask = [
 
 function App() {
 
+  
+
   const [todos, SetTodos] = React.useState(defaultTask);
   const [searchValue, setSearchValue] = React.useState('');
   
@@ -31,8 +33,6 @@ function App() {
       return todoText.includes(searchText);
     }
   );
-  
-  // Esta funcion es para prender o apagar un boton cuando se da click
   
 
   const checkTodo = (text) => {
