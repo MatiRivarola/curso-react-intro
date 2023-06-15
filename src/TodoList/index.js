@@ -1,4 +1,4 @@
-import "./App.css"
+import "../App/App.css"
 
 function TodoList( { children } ) {
     return(
