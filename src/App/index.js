@@ -3,6 +3,10 @@ import { TodoCounter } from '../TodoCounter/index';
 import { TodoCreate} from '../TodoCounter/TodoCreate';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoIcon/TodoItem';
+import { TodosLoading } from '../TodosLoading';
+import { TodosError } from '../TodosError';
+import { TodosEmpty } from '../TodosEmpty';
+
 import { CreateTodoButton } from '../CreateTodoButton';
 import { CancelButton } from '../CreateTodoButton';
 import './App.css'
@@ -20,10 +24,16 @@ import { useLocalStorage } from "./useLocalStorage";
 
 
 function App() {
-  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
+  const {
+    item: todos,
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = React.useState('');
   
-
+  
+ 
   const completedTodos = todos.filter( todo => !!todo.completed).length ;
   const totalTodos = todos.length;
 
@@ -79,6 +89,10 @@ function App() {
           />
           <section>
             <TodoList>
+              {loading && <TodosLoading/>}
+              {error && <TodosError/>}
+              {(!loading && searchTodos.length === 0) && <TodosEmpty/> }
+
               {searchTodos.map(todo => (
                 <TodoItem 
                 key={todo.text} 
@@ -89,6 +103,7 @@ function App() {
                 />
                 ))}
             </TodoList>
+
           </section>
         </div>  
 
