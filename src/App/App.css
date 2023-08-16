@@ -180,3 +180,11 @@
 .icon-check:hover .icon-svg{
   fill: green;
 }
+
+
+.proggres-linear{
+  display: flex;
+  justify-self: center;
+  margin: 29px 10px 15px 10px;
+  border-radius: 15px;
+}
