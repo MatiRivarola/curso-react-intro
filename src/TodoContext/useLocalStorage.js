@@ -36,14 +36,24 @@ function useLocalStorage(itemName , initialValue) {
     const saveItem = (newItem) => {
         localStorage.setItem(itemName, JSON.stringify(newItem));
         setItem(newItem);
-
     };  
+
     return {
         item, 
         saveItem,
         loading,
         error,
     };
-}
+};
 
-export {useLocalStorage}
+export {useLocalStorage};
+
+
+// const defaultTask = [
+//   { text: 'Organizar cuarto', completed: true },
+//   { text: 'cortar pasto', completed: false },
+//   { text: 'Pasar react', completed: false },
+// ];
+
+// localStorage.setItem('TODOS_V1',JSON.stringify(defaultTask))
+
