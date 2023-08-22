@@ -10,7 +10,7 @@ function TodoCounter({total , completed }){
 
     return(
       <h1>
-        Has completado <span>{completedTodos}</span> de <span>{totalTodos}</span> TODOS
+        You are completed <span>{completedTodos}</span> of <span>{totalTodos}</span> TODOS
       </h1>
     )
 }

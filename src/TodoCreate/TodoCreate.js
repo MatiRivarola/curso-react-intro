@@ -7,7 +7,7 @@ function TodoCreate(){
 
 
     return(
-      <input placeholder= "Comfort is not allowed here" 
+      <textarea placeholder= "Comfort is not allowed here" 
       className='create-todo'
       values={createTodo}
       onChange={ (evento)=>{
