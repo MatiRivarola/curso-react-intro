@@ -1,4 +1,4 @@
-import './App.css';
+import '../App/App.css';
 import React from 'react';
 import { DeleteIcon } from "./DeleteIcon";
 import {CompleteIcon} from "./CompleteIcon";
